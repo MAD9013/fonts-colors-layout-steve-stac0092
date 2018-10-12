@@ -6,66 +6,139 @@
     box-sizing: border-box;
 }
 html{
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.6;
+    font-family: 'Karla','rubik',sans-serif,;
     /*font-family: font stack required for body text */
 }
 h1, h2, h3, h4{
     /*font-family: font stack required for headings */
+    text-shadow: 1px 1px 1px #ccc;
+    color: hsl(178, 100%, 31%);;
+    font-family: 'Karla', sans-serif;
+    padding: 5px;
 }
 p{
+    font-family: 'rubik';
     
 }
 .container{
+    max-width: 1500px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
     
 }
+
+
+
 .subnav{
-    
+    display: flex;
+    justify-content: flex-end;
 }
+
+
 .subnav a{
+    padding: 5px;
+    color: hsl(178, 100%, 31%);
+    text-decoration: none;
+
+}
+
+.subnav a:hover{
+    color: hsl(0,0%,1%);
     
 }
+
 .mainnav{
-    
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;    
 }
 .mainnav a{
-    
+    color: hsl(178, 100%, 35%);
+    text-decoration: none;
+}
+
+.mainnav a:hover{
+    color: hsl(0,0%,1%);
 }
 .masthead{
     
 }
 .times-logo{
+    display: flex;
+    justify-content: center;
+
     
 }
 .masthead h1{
+    color: hsl(178, 100%, 31%);
+    text-align: center;
+    padding:10px;
+    font-size: 40px;
+    
+    
     
 }
-.content{
-    
+.content{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+   
 }
 .content .story{
     
 }
 .story.lead-story{
+    font-weight:550;
+    border-style:outset;
+    padding: 15px;
+    
+    
+    
     
 }
 h1.story-title{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+
+    
     
 }
 .story img{
+    float:left;
+    padding: 0 20px 20px 0;
+
     
 }
-.story p{
-    
+.story{
+    font-weight: lighter;
+   
+   
 }
 .story blockquote{
-    quotes: "\201E" "\201D";
+    quotes: "\201C" "\201D";
+    font-style: italic;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
 }
 .story blockquote::before{
     content: open-quote;
+     font-style: italic;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 20px;
 }
 .story blockquote::after{
     content: close-quote;
+     font-style: italic;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: 20px;
 }
 .story p.byline{
     
@@ -77,7 +150,7 @@ p.byline span.pub{
     
 }
 .foot{
-    
+   padding-top: 50px;
 }
 .foot p{
     
